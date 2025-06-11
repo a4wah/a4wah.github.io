@@ -1,0 +1,239 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./css/main.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:700'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <title>Portofolio | Aref</title>  
+</head>  
+<body>  
+      <!-- Navbar start -->  
+        <nav class="navbar">  
+            <a href="#" class="navbar-logo">Aref<span> Wahyu</span></a>  
+
+            <div class="navbar-nav">  
+            <a href="#home">Home</a>  
+            <a href="#about">About Me</a>  
+            <a href="#project">Projects</a> <!-- Modified link text -->  
+            <a href="#service">Services</a> <!-- Modified link text -->  
+            <a href="#contact">Contact</a> <!-- Modified link text -->  
+            </div>  
+
+            <div class="navbar-extra">  
+            <a href="#" id="search-button"><i data-feather="search"></i></a>  
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>  
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>  
+            </div>  
+
+            <!-- Search Form start -->  
+            <div class="search-form">  
+            <input type="search" id="search-box" placeholder="search here...">  
+            <label for="search-box"><i data-feather="search"></i></label>  
+            </div>  
+            <!-- Search Form end -->  
+
+        </nav>  
+    <!-- Navbar end -->  
+
+    <section class="hero" id="home">  
+        <div class="mask-container">  
+            <div class="image-container">  
+                <img src="/Asset/Aref.png" alt="Profile" class="profile-image">  
+            </div>  
+            <main class="content">  
+                <div class="text-content">  
+                    <h1>Welcome!</h1>  
+                    <h2>I am a Backend Developer & IT Support Specialist</h2>  
+
+                    <p>  
+                        Saya adalah profesional di bidang teknologi yang berfokus pada pengembangan backend dan dukungan IT.  
+                        Saya berpengalaman dalam membangun dan memelihara sistem backend yang handal menggunakan  
+                        PHP dengan framework seperti CodeIgniter dan Laravel, serta menggunakan database MySQL.  
+                    </p>                    
+
+                    <p>  
+                        Selain pengembangan aplikasi, saya juga memiliki keahlian sebagai <strong>IT Support</strong>.  
+                        Saya berpengalaman dalam instalasi, perawatan, dan perbaikan perangkat seperti <strong>CCTV, PC/Laptop, printer,</strong>  
+                        serta penanganan masalah jaringan komputer skala instansi.  
+                        Saya berkomitmen untuk memberikan solusi cepat dan tepat agar seluruh sistem pendukung kegiatan  
+                        dapat berjalan dengan optimal dan minim gangguan.  
+                    </p>
+                    
+                    <div class="buttons">  
+                        <button>Hear me</button>  
+                        <button>Let's Talk</button>  
+                    </div>  
+                </div>  
+            </main>  
+        </div>  
+    </section>  
+    <!-- Hero Section end -->  
+
+    <!-- About me -->
+  
+    <!-- end DEbout me -->
+
+    <!-- Projects -->  
+    <section class="projects" id="project"> <!-- Changed class name from 'project' to 'projects' -->  
+        <div class="projects-content"> <!-- Updated class name -->  
+            <div class="project-card"> <!-- Updated class name -->  
+                <div class="face face1">  
+                    <div class="content">  
+                        <img src="./Asset/MI Suren.png" alt="Design Project">  
+                        <h3>MI Suren</h3>  
+                    </div>  
+                </div>  
+                <div class="face face2">  
+                    <div class="content">  
+                        <p>
+                            MI Suren adalah landing page informatif yang menampilkan profil sekolah, kegiatan, jadwal pelajaran,  
+                            dan pengumuman penting. Desain dibuat sederhana dan responsif menggunakan HTML dan Bootstrap,  
+                            sehingga mudah diakses oleh guru, siswa, dan orang tua. Proyek ini bertujuan untuk memperkuat citra  
+                            sekolah secara digital dan mempermudah penyampaian informasi.
+                        </p>                        
+                        <a href="#">Read More</a>  
+                    </div>  
+                </div>
+                
+            </div>  
+            <div class="project-card"> <!-- Updated class name -->  
+                <div class="face face1">  
+                    <div class="content">  
+                        <img src="./Asset/perpuslpka.com_index.php_home.png" alt="Code Project">  
+                        <h3>Perpustakaan</h3>  
+                    </div>  
+                </div>  
+                <div class="face face2">  
+                    <div class="content">  
+                        <p>
+                            Aplikasi Perpustakaan ini dibangun menggunakan CodeIgniter 3 dan MySQL sebagai basis data.  
+                            Sistem ini mencakup fitur manajemen koleksi buku, data anggota, peminjaman dan pengembalian,  
+                            serta laporan aktivitas perpustakaan secara digital. Dirancang untuk memudahkan pengelolaan  
+                            perpustakaan sekolah secara efisien dan terstruktur.
+                        </p>  
+                        <a href="#">Read More</a>  
+                    </div>  
+                </div>                
+            </div>  
+            <div class="project-card"> <!-- Updated class name -->  
+                <div class="face face1">  
+                    <div class="content">  
+                        <img src="./Asset/127.0.0.1_8000_.png" alt="Launch Project">  
+                        <h3>Absensi Siswa</h3>  
+                    </div>  
+                </div>  
+                <div class="face face2">  
+                    <div class="content">  
+                        <p>
+                            Aplikasi Absensi Siswa ini dibangun menggunakan Laravel 9 dengan fitur lengkap seperti  
+                            pencatatan kehadiran harian, rekap berdasarkan kelas dan tanggal, serta dukungan ekspor  
+                            data ke format PDF, Excel, dan CSV. Selain itu, sistem ini juga menyediakan cetak  
+                            ID Card siswa lengkap dengan barcode untuk integrasi disistem lainnya yang terdapat di sekolah.
+                        </p>  
+                        <a href="#">Read More</a>  
+                    </div>  
+                </div>
+                 
+            </div>  
+        </div>  
+    </section>  
+    <!-- End Projects -->  
+    
+    <!-- Services -->  
+    <section class="services" id="service"> <!-- Changed class name from 'service' to 'services' -->  
+        <main class="main flow">  
+            <h1 class="main__heading">Services</h1>  
+            <div class="main__cards cards">  
+              <div class="cards__inner">  
+                <div class="cards__card card border shadow p-4 text-center">
+                    <h2 class="card__heading">Basic</h2>
+                    <p class="card__price text-success fw-bold">Mulai 150 ribuan</p>
+                    <ul role="list" class="card__bullets flow list-unstyled my-3">
+                        <li>Landing Page profesional dan cepat dimuat</li>
+                        <li>Desain responsif, mendukung HP & desktop</li>
+                        <li>Dibangun hanya dengan HTML & Bootstrap</li>
+                        <li>Cocok untuk profil usaha, sekolah, atau portofolio</li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/6285331568211?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Basic" 
+                      class="card__cta cta btn btn-success" 
+                      target="_blank">
+                      Pesan Sekarang via WhatsApp
+                    </a>
+                </div>                  
+          
+                <div class="cards__card card">  
+                    <h2 class="card__heading">Pro</h2>  
+                    <p class="card__price">Mulai 750 ribuan</p>  
+                    <ul role="list" class="card__bullets flow">  
+                      <li>Sistem dinamis berbasis PHP (struktur MVC)</li>  
+                      <li>Terhubung ke database MySQL (CRUD lengkap)</li>  
+                      <li>Fitur autentikasi pengguna (Login/Register)</li>  
+                      <li>Dapat dikembangkan untuk sekolah, toko, dll</li>  
+                    </ul>  
+                    <a 
+                      href="https://wa.me/6285331568211?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Pro%20dengan%20fitur%20PHP%20MVC%20dan%20MySQL" 
+                      class="card__cta cta" 
+                      target="_blank">
+                      Pesan Sekarang via WhatsApp
+                    </a>                     
+                </div>  
+        
+                <div class="cards__card card">  
+                    <h2 class="card__heading">Ultimate</h2>  
+                    <p class="card__price">Mulai 2 jutaan</p>  
+                    <ul role="list" class="card__bullets flow">  
+                      <li>Dibangun dengan Laravel atau CodeIgniter</li>  
+                      <li>Fitur ekspor data ke PDF dan import dari Excel</li>  
+                      <li>Sistem manajemen data lengkap (CRUD)</li>  
+                      <li>Desain responsif dan mudah dikembangkan</li>  
+                    </ul>  
+                    <a 
+                      href="https://wa.me/6285331568211?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20Ultimate%20dengan%20fitur%20Laravel%20%2F%20CI%2C%20ekspor%20PDF%20dan%20import%20Excel" 
+                      class="card__cta cta" 
+                      target="_blank">
+                      Pesan Sekarang via WhatsApp
+                    </a>  
+                </div>                  
+            </div>  
+            
+            <div class="overlay cards__inner"></div>  
+          </div>  
+      </main>  
+  </section>  
+  <!-- End Services -->  
+
+  <!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Hubungi Saya</h2>
+        <form action="proses-kontak.php" method="POST">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </section>
+    <!-- End Contact Section -->  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script src='//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js'></script>
+  <script src="js/script.js"></script>  
+  <script src="js/script_service.js"></script>  
+  <script src="js/about.js"></script>
+</body>  
+</html>
