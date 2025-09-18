@@ -1,0 +1,108 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    }
+
+section {
+  min-height: 100vh;  /* Buat section mengisi layar penuh */
+  display: flex;
+  align-items: center;  /* Tengahkan konten secara vertikal */
+  justify-content: center; /* Opsional: tengahkan horizontal */
+  padding: 80px 20px;  /* Tambahkan padding biar tidak terlalu rapat */
+  box-sizing: border-box;
+}
+
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.7rem;
+        color: #333;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 3rem;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #fff;
+        color: #667eea;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+    .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    }
+
+    .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+    }
+
+    .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease 0.2s both;
+    }
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+}

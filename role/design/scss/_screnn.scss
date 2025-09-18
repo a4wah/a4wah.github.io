@@ -1,0 +1,86 @@
+:root {
+    /* Light Theme */
+    --bg-light: #ffffff;
+    --text-light: #333333;
+    --primary-light: #4a6fa5;
+    --secondary-light: #ff7e5f;
+    --accent-light: #6c63ff;
+    --card-light: #f8f9fa;
+    
+    /* Dark Theme */
+    --bg-dark: #121212;
+    --text-dark: #f5f5f5;
+    --primary-dark: #6d9eeb;
+    --secondary-dark: #ff9a8b;
+    --accent-dark: #8d82ff;
+    --card-dark: #1e1e1e;
+    
+    /* Default to Light Theme */
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --accent: var(--accent-light);
+    --card: var(--card-light);
+}
+
+[data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --accent: var(--accent-dark);
+    --card: var(--card-dark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: url('../asset/still-life-graphic-design-studio.jpg');
+    background-size: cover;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}

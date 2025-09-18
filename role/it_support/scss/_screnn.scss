@@ -1,0 +1,39 @@
+        :root {
+            --primary: #2563eb;
+            --secondary: #3b82f6;
+            --dark: #111827;
+            --light: #f9fafb;
+            --accent: #10b981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        
