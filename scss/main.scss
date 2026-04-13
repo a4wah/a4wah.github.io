@@ -1,0 +1,35 @@
+@use 'abstracts/variables' as *;
+@use 'components/navbar' as *;
+@use 'abstracts/hero' as *;
+@use 'abstracts/career' as *;
+@use 'abstracts/about' as *;
+@use 'abstracts/contact' as *;
+@use 'abstracts/query' as *;
+
+/* ===== QUICK FIX - PASTIKAN INI DI ATAS SEMUA MEDIA QUERY ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  color: #f5f5f7;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.section-padding {
+  padding: 100px 0;
+}

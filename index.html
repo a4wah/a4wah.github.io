@@ -1,212 +1,211 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio - Aref Wahyu Saputro</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">Aref Wahyu</div>
-                <div class="hamburger" id="hamburger">&#9776;</div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#career">Career</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aref Wahyu Saputro | Professional Role</title>
+    <!-- Modern Font: Inter atau Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"> <!-- Hasil compile SCSS -->
+</head>
+<body>
+  <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Aref<span>.</span></a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
 
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-image">
-                        <img src="./asset/Hero.jpeg" alt="Profile" class="hero-profile-img">
-                    </div>
-                    <h1>Aref Wahyu Saputro</h1>
-                    <a href="#contact" class="cta-button">Get In Touch</a>
-                </div>
-            </div>
-        </section>
+            <!-- Menu Wrapper -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#work" class="nav-item">Work</a></li>
+                <li><a href="#career" class="nav-item">Career </a></li>
+                <li><a href="assets/cv/resume.pdf" class="nav-item btn-cv">Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">A brief introduction to who I am</p>
-                <div class="about-content">
-                    <div class="about-photo">
-                        <img src="./asset/About.jpeg" alt="Aref Wahyu Saputro" class="about-profile-img" />
-                    </div>
-
-                    <div class="about-description">
-                    <p>Hi, I'm <strong>Aref Wahyu Saputro</strong> — a passionate IT Support Specialist currently working at Company J&T CARGO. I hold an Associate Degree (D3) in Informatics and have a strong interest in technology, troubleshooting, and helping teams solve technical challenges efficiently.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-      <section id="career" class="career-section">
-            <div class="container">
-                <h2 class="section-title">Career</h2>
-                <div class="career-flow">
-                   <!-- Step 1 -->
-                    <div class="career-step">
-                        <div class="icon">💻</div>
-                        <h3>Computer Technician</h3>
-                        <span class="step-date">2022 - 2023</span>
-                        <p>Repairing devices, installing operating systems, and maintaining computers at the service center.</p>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="career-step">
-                        <div class="icon">🌐</div>
-                        <h3>Computer & Network Technician</h3>
-                        <span class="step-date">2023 - 2025</span>
-                        <p>Installing networks, maintaining computers, and troubleshooting in a school environment.</p>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="career-step">
-                        <div class="icon">🛠️</div>
-                        <h3>IT Specialist</h3>
-                        <span class="step-date">2025 - Present</span>
-                        <p>Installing devices, maintaining systems, and providing IT support at J&T CARGO.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="expertise" class="expertise">
-            <div class="container">
-                <h2 class="section-title">My Roles & Expertise</h2>
-                <p class="section-subtitle">Here’s what I specialize in and bring to every project.</p>
-                <div class="expertise-grid">
-
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Junior Web Developer</h3>
-                    <p>
-                        I am a technology professional focused on backend development and IT support. I have experience in building and maintaining reliable backend systems using PHP with frameworks such as CodeIgniter and Laravel, as well as working with MySQL databases.
-                    </p>
-                        <a href="./role/web_developer.html">Learn More</a>
-                    </div>
-
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>Desain Grafis</h3>
-                    <p>
-                            I am skilled in designing visual content for both digital and print media using tools such as CorelDRAW, Adobe Photoshop, and Lightroom. I specialize in creating designs for branding, social media, and photo editing with a strong focus on visual appeal and consistency.
-                        </p>
-                        <a href="./role/desain_grafis.html">Learn More</a>
-                    </div>
-
-                    <!--  
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-pen-nib"></i>
-                        </div>
-                        <h3>Content Creation</h3>
-                    <p>
-                        I am a YouTube content creator focused on educational content in coding and computer networking. I create engaging and informative videos to help viewers learn programming concepts and network fundamentals. My content aims to simplify complex topics and make tech education accessible to a wider audience.
-                    </p>
-                        <a href="./role/content_creator.html">Learn More</a>
-                    </div>
-                     -->
-
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>IT & Network Support</h3>
-                    <p>
-                        I am an experienced IT Support Specialist. I specialize in the installation, maintenance, and repair of devices such as CCTV systems, PCs/laptops, and printers, as well as troubleshooting computer network issues at an organizational level. I am committed to delivering fast and effective solutions to ensure all support systems run optimally with minimal downtime.
-                    </p>
-                        <a href="./role/it_support.html">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Overlay untuk area di luar menu -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+<header class="hero" id="home">
+    <div class="container hero-wrapper">
         
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p class="section-subtitle">Let's work together</p>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>arefwahyu01@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+62 858-6538-5418</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Purworejo, Indonesia</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/aref-wahyu-saputro</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>a4wah.github.io</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+        <!-- SISI TEKS -->
+        <div class="hero-content reveal">
+    <!-- Mengganti Digital Experience dengan Reliable Infrastructure agar lebih sesuai jobdesc IT Engineer -->
+    <h1 class="reveal-text">Ensuring <span>Reliable Infrastructure</span> that Powers Business.</h1>
+    
+    <p class="reveal-fade">
+        I am <b>Aref Wahyu Saputro</b>, an IT Engineer & Infrastructure Specialist based in Indonesia, dedicated to seamless system performance and real-time solutions.
+    </p>
+
+    <div class="hero-btns reveal-fade">
+        <a href="#work" class="btn-primary">View Projects</a> <!-- "Work" bisa diganti Projects -->
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+    </div>
+</div>
+        
+        <!-- SISI GAMBAR (POP-OUT EFFECT) -->
+        <div class="hero-image-area reveal">
+            <div class="image-wrapper">
+                <div class="blob-bg"></div> <!-- Animasi gelombang di belakang -->
+                <div class="circle-frame">
+                    <!-- FOTO KAMU -->
+                    <img src="assets/images/Aref Wahyu Saputro.jpeg" alt="Aref Wahyu Saputro" class="profile-img">
                 </div>
             </div>
-        </section>
+        </div>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Aref Wahyu Saputro. All rights reserved.</p>
+    </div>
+</header>
+
+<section class="about section-padding" id="about">
+    <div class="container about-grid">
+        <div class="about-text reveal">
+            <span class="sub-title">About Me</span>
+            <h2 class="main-heading">Solving complex <span>Technical Challenges</span> with precision.</h2>
+            <p class="description">
+                I am an IT Support Specialist with a Diploma in Computer Science. Expertise in installation, maintenance, and troubleshooting of computer hardware, networks, and infrastructure systems. Experienced in handling fast-paced environments requiring real-time solutions for logistics and education sectors.
+            </p>
+            
+            <!-- Skill tags berdasarkan LinkedIn kamu -->
+            <div class="about-skills">
+                <span class="skill-tag">IT Infrastructure</span>
+                <span class="skill-tag">Linux Administration</span>
+                <span class="skill-tag">Computer Networking</span>
+                <span class="skill-tag">CCTV Systems</span>
+                <span class="skill-tag">Hardware Troubleshooting</span>
+                <span class="skill-tag">Web Development</span>
             </div>
-        </footer>
+        </div>
 
-        <script src="./js/script.js"></script>
-    </body>
+        <div class="about-stats reveal">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h2 class="counter">4+</h2>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+            <div class="stat-card colored">
+                <div class="stat-info">
+                    <h2 class="counter">50+</h2> <!-- Estimasi sistem/perangkat yang dihandle -->
+                    <p>Systems Maintained</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h2 class="counter">24/7</h2>
+                    <p>Uptime Oriented</p>
+                </div>
+            </div>
+            <div class="stat-card border-only">
+                <div class="stat-info">
+                    <p>Open for Web Dev & IT Staff Roles</p>
+                    <a href="#contact" class="btn-sm">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="career section-padding" id="career">
+    <div class="container">
+        <h2 class="section-title reveal">Career Journey</h2>
+
+        <div class="career-wavy-wrapper reveal">
+            <div class="svg-container">
+                <!-- SVG Path tetap sama seperti kode sebelumnya -->
+                <svg class="career-svg desktop-svg" viewBox="0 0 1000 200">
+                    <path class="path-bg" d="M0,100 C150,100 150,20 300,20 C450,20 450,180 600,180 C750,180 750,100 1000,100" fill="none" stroke="#222" stroke-width="3" />
+                    <path class="path-active career-path" d="M0,100 C150,100 150,20 300,20 C450,20 450,180 600,180 C750,180 750,100 1000,100" fill="none" stroke="#007AFF" stroke-width="4" />
+                </svg>
+
+                <!-- Nodes Pengalaman Kerja Aref -->
+                <div class="career-nodes">
+                    
+                    <!-- 1. SSB Komputer (Awal) -->
+                    <div class="node n1">
+                        <div class="dot"></div>
+                        <div class="node-content bottom">
+                            <span>March 2022 - July 2023</span>
+                            <h4>Technical Support Specialist</h4>
+                            <p>SSB Komputer</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. SMK YPE Sawunggalih (Peak) -->
+                    <div class="node n2">
+                        <div class="dot"></div>
+                        <div class="node-content top">
+                            <span>July 2023 - June 2025</span>
+                            <h4>IT Technician</h4>
+                            <p>SMK YPE Sawunggalih</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. J&T Cargo (Valley) -->
+                    <div class="node n3">
+                        <div class="dot"></div>
+                        <div class="node-content bottom">
+                            <span>July 2025 - Present</span>
+                            <h4>IT Support Specialist</h4>
+                            <p>PT Global Yimi Cargo</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Future / Current Focus (End) -->
+                    <div class="node n4">
+                        <div class="dot"></div>
+                        <div class="node-content top">
+                            <span>Present</span>
+                            <h4>Web Dev & IT Engineer</h4>
+                            <p>Freelance & Projects</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact section-padding" id="contact">
+    <div class="container">
+        <!-- Contact Card -->
+        <div class="contact-card reveal">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="sub-title">Get In Touch</span>
+                    <h2>Ready to start a <span>project?</span></h2>
+                    <p>Contact me for collaboration or just to say hi. I'm always open to discussing new technology.</p>
+                    <a href="mailto:arefwahyu01@email.com" class="email-link">arefwahyu01@email.com</a>
+                </div>
+
+                <div class="social-wrapper">
+                    <p>Follow My Journey</p>
+                    <div class="socials">
+                        <a href="#" class="social-item">LinkedIn</a>
+                        <a href="#" class="social-item">GitHub</a>
+                        <a href="#" class="social-item">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Elemen Dekoratif (Opsional - Lingkaran Cahaya) -->
+            <div class="contact-glow"></div>
+        </div>
+        
+        <!-- Footer Sederhana -->
+        <footer class="mini-footer">
+            <p>&copy; 2025 Aref Wahyu Saputro. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+
+    <script src="js/main.js" type="module"></script>
+</body>
 </html>

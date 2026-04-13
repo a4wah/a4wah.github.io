@@ -1,0 +1,162 @@
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 5% 60px;
+  overflow: hidden;
+}
+
+.hero .hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 span {
+  color: #007AFF;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+  max-width: 550px;
+}
+
+.hero-content .hero-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-outline {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #007AFF;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056cc;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.4);
+}
+
+.btn-outline {
+  color: #007AFF;
+  border: 2px solid #007AFF;
+}
+
+.btn-outline:hover {
+  background: #007AFF;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.hero-image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-image-area .image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px; /* Dikurangi sedikit */
+  aspect-ratio: 1/1;
+}
+
+.hero-image-area .circle-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007AFF, #0056cc); /* Gradient lebih bagus */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* CENTER VERTIKAL */
+  justify-content: center; /* CENTER HORIZONTAL */
+  border: 8px solid rgba(255, 255, 255, 0.15); /* Border lebih tipis */
+  box-shadow: 
+    0 20px 60px rgba(0, 122, 255, 0.4),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1); /* Inner glow */
+  z-index: 2;
+}
+
+.hero-image-area .circle-frame .profile-img {
+  width: 95%; /* 95% = fit asli tanpa crop berat */
+  height: 95%; /* Height juga dibatasi */
+  object-fit: cover; /* Cover tapi tidak ekstrem */
+  object-position: center top 20%; /* Top fokus wajah */
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 50%; /* Pastikan bulat */
+  filter: 
+    drop-shadow(0 8px 25px rgba(0, 0, 0, 0.4))
+    brightness(1.05) /* Sedikit terang */
+    contrast(1.1); /* Kontras natural */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-image-area .circle-frame:hover .profile-img {
+  transform: scale(1.02); /* Hover zoom ringan */
+  filter: 
+    drop-shadow(0 12px 35px rgba(0, 122, 255, 0.5))
+    brightness(1.08)
+    contrast(1.12);
+}
+
+.hero-image-area .blob-bg {
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 130%;
+  height: 130%;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(0, 122, 255, 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(0, 122, 255, 0.2) 0%, transparent 70%);
+  z-index: 1;
+  border-radius: 45% 55% 65% 35% / 35% 45% 55% 65%;
+  animation: blobAnim 10s infinite ease-in-out;
+  filter: blur(1px);
+}
+
+@keyframes blobAnim {
+  0%, 100% {
+    border-radius: 45% 55% 65% 35% / 35% 45% 55% 65%;
+    transform: rotate(0deg) scale(1);
+  }
+  33% {
+    border-radius: 55% 45% 35% 65% / 65% 35% 45% 55%;
+    transform: rotate(120deg) scale(1.05);
+  }
+  66% {
+    border-radius: 65% 35% 55% 45% / 45% 65% 35% 55%;
+    transform: rotate(240deg) scale(0.95);
+  }
+}

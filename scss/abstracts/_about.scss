@@ -1,0 +1,132 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text .sub-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #007AFF;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-text .main-heading {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.about-text .main-heading span {
+  color: #007AFF;
+}
+
+.about-text .description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.about-skills .skill-tag {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.about-skills .skill-tag:hover {
+  background: rgba(0, 122, 255, 0.1);
+  border-color: #007AFF;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.about-stats .stat-card {
+  background: #151515;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  transition: 0.3s;
+}
+
+.about-stats .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-stats .stat-card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #007AFF;
+  margin-bottom: 5px;
+}
+
+.about-stats .stat-card p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-stats .stat-card.colored {
+  background: #007AFF;
+}
+
+.about-stats .stat-card.colored h2,
+.about-stats .stat-card.colored p {
+  color: #fff;
+}
+
+.about-stats .stat-card.border-only {
+  background: transparent;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.about-stats .stat-card.border-only p {
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.about-stats .stat-card.border-only .btn-sm {
+  padding: 5px 15px;
+  background: #007AFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.about-stats .stat-card.border-only .btn-sm:hover {
+  background: #0056cc;
+}

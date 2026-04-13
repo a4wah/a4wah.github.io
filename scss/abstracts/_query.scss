@@ -1,0 +1,287 @@
+/* ===== MEDIA QUERIES - FIXED VERSION ===== */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero .hero-wrapper {
+    flex-direction: column-reverse !important;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .hero-content p {
+    margin: 0 auto 2.5rem !important;
+  }
+
+  .hero-content .hero-btns {
+    justify-content: center !important;
+  }
+
+  .contact-content {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .contact-info p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-wrapper {
+    text-align: center !important;
+  }
+
+  .social-wrapper .socials {
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  /* ===== NAVBAR MOBILE - PERFECT ===== */
+  .hamburger {
+    display: flex !important;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg) !important;
+  }
+
+  .nav-links {
+    position: fixed !important;
+    right: -100% !important;
+    top: 0 !important;
+    width: 80% !important;
+    height: 100vh !important;
+    background: rgba(17, 17, 17, 0.99) !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 1000 !important;
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    backdrop-filter: blur(30px) !important;
+    box-shadow: -20px 0 50px rgba(0,0,0,0.8) !important;
+  }
+
+  .nav-links.active {
+    right: 0 !important;
+  }
+
+  .nav-links .nav-item {
+    font-size: 1.4rem !important;
+    margin: 2.5rem 0 !important;
+    opacity: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  /* ===== COMMON MOBILE ===== */
+  .about-text .main-heading,
+  .hero-content h1 {
+    text-align: center !important;
+  }
+
+  .about-text .description {
+    text-align: center !important;
+    margin: 0 auto 2rem !important;
+  }
+
+  .about-skills {
+    justify-content: center !important;
+  }
+
+  .contact-card {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    text-align: center !important;
+    padding: 2.5rem 1.5rem !important;
+  }
+
+  .social-wrapper .socials .social-item:hover {
+    transform: translateY(-3px) !important;
+  }
+
+  /* ===== CAREER MOBILE - TOTAL RESET ===== */
+  .career {
+    padding: 80px 0 !important;
+  }
+
+  .career-svg.desktop-svg {
+    display: none !important; /* Hide desktop SVG */
+  }
+
+  .career-wavy-wrapper {
+    padding: 3rem 1rem !important;
+    max-width: 100% !important;
+  }
+
+  .svg-container {
+    position: static !important;
+    max-width: 100% !important;
+  }
+
+  /* VERTICAL CARD LIST */
+  .career-nodes {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .node {
+    position: static !important; /* CRITICAL: Static positioning */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 1.5rem !important;
+    padding: 1.8rem 1.5rem !important;
+    background: rgba(25, 25, 25, 0.9) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4) !important;
+    opacity: 1 !important;
+    transform: none !important; /* NO TRANSFORM */
+    min-height: 90px !important;
+  }
+
+  .node:nth-child(even) {
+    background: rgba(0, 122, 255, 0.08) !important;
+    border-color: rgba(0, 122, 255, 0.3) !important;
+  }
+
+  /* DOT */
+  .node .dot {
+    width: 16px !important;
+    height: 16px !important;
+    background: linear-gradient(135deg, #007AFF, #0056cc) !important;
+    border: 2px solid #fff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 20px rgba(0, 122, 255, 0.6) !important;
+    flex-shrink: 0 !important;
+    margin-top: 4px !important;
+  }
+
+  /* CONTENT */
+  .node .node-content {
+    position: static !important;
+    width: auto !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    flex: 1 !important;
+    text-align: left !important;
+  }
+
+  .node .node-content.top,
+  .node .node-content.bottom {
+    position: static !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .node .node-content span {
+    color: #007AFF !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+  }
+
+  .node .node-content h4 {
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    margin: 0 0 0.3rem 0 !important;
+    font-weight: 600 !important;
+  }
+
+  .node .node-content p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 3% !important;
+  }
+
+  section {
+    padding: 70px 0 !important;
+  }
+
+  .hero {
+    padding: 100px 3% 50px !important;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .career-nodes {
+    gap: 2rem !important;
+  }
+
+  .node {
+    padding: 1.5rem 1.2rem !important;
+    gap: 1.2rem !important;
+  }
+
+  .node .node-content h4 {
+    font-size: 1.05rem !important;
+  }
+
+  .hero-btns {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .contact-card {
+    padding: 2rem 1rem !important;
+  }
+}
+
+/* ===== UTILITY - SELALU VISIBLE (FIX) ===== */
+.reveal {
+  opacity: 1 !important; /* Fix: Jangan sembunyikan */
+  transform: none !important;
+}
+
+.counter {
+  font-weight: 700 !important;
+  color: #007AFF !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
